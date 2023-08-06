@@ -38,10 +38,10 @@ try:
                 sys.exit(0)
 
             except Exception as e:
-                print(f"\n[*] File zip: {file_zip}\n[*] Kata sandi: {password}\n[*] Status: Salah\n")
+                print(f"\n[*] File zip: {file_zip}\n[*] Kata sandi: {password}\n[*] Status: Salah")
                 time.sleep(1)
 
-    print("Kata sandi tidak ditemukan dalam wordlist.")
+    print("\nKata sandi tidak ditemukan dalam wordlist.")
     sys.exit(1)
 
 except Exception as e:
