@@ -9,7 +9,7 @@ print("""
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @ Program : Pemecah Kata Sandi File Zip     @
 @ Pembuat : Rofi [FII14]                    @
-@ GitHub  : https://github.com/FII14/PKSFZ @
+@ GitHub  : https://github.com/FII14/PKSFZ  @
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 """)
 
