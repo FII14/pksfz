@@ -16,7 +16,7 @@ c = Fore.CYAN
 def berakhir():
     # Tampilkan tanggal dan waktu saat skrip berakhir
     current_datetime_end = datetime.now()
-    print(f"\n[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    print(f"\n{p}[{k}!{p}] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}\n")
     
 
 os.system("clear")
