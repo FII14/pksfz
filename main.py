@@ -15,7 +15,7 @@ c = Fore.CYAN
 
 def berakhir():
     waktu = datetime.now()
-    print(f"\n{p}[{k}!{p}] Berakhir pada: {waktu.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    print(f"\n{p}[{k}!{p}] Berakhir pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}\n")
 
 def ekstrak_zip(file_zip, kata_sandi):
     try:
@@ -57,7 +57,7 @@ def utama():
             sys.exit(1)
 
         waktu = datetime.now()
-        print(f"\n{p}[{k}!{p}] Dimulai pada: {waktu.strftime('%Y-%m-%d %H:%M:%S')}")
+        print(f"\n{p}[{k}!{p}] Dimulai pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}")
 
         try:
             with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
