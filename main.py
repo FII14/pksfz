@@ -13,7 +13,7 @@ p = Fore.RESET
 k = Fore.YELLOW
 c = Fore.CYAN
 
-def waktu():
+def berakhir():
     # Tampilkan tanggal dan waktu saat skrip berakhir
     current_datetime_end = datetime.now()
     print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -45,7 +45,7 @@ try:
                 with zipfile.ZipFile(file_zip, "r") as z:
                     z.extractall(pwd=kata_sandi.encode("utf-8"))
                 print(f"\n{h}[{p}*{h}] File zip: {file_zip}\n[{p}*{h}] Kata sandi: {kata_sandi}\n[{p}*{h}] Status: Benar\n{p}")
-                waktu()
+                berakhir()
                 sys.exit(0)
 
             except Exception as e:
@@ -53,6 +53,7 @@ try:
                 time.sleep(1)
 
     print(f"\n{k}Kata sandi tidak ditemukan dalam wordlist.{p}")
+    berakhir()
     sys.exit(1)
 
 except Exception as e:
