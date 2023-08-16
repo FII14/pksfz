@@ -24,7 +24,7 @@ def ekstrak_zip(file_zip, kata_sandi):
             print(f"""
 {p}[{h}+{p}] {h}File zip: {file_zip}
 {p}[{h}+{p}] {h}Kata sandi: {kata_sandi}
-{p}[{h}+{p}] {h}Status: Benar""")
+{p}[{h}+{p}] {h}Status: Benar{p}""")
             berakhir()
             sys.exit(0)
             
