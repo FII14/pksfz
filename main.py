@@ -14,9 +14,8 @@ k = Fore.YELLOW
 c = Fore.CYAN
 
 def berakhir():
-    # Tampilkan tanggal dan waktu saat skrip berakhir
-    current_datetime_end = datetime.now()
-    print(f"\n{p}[{k}!{p}] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}\n")
+    waktu = datetime.now()
+    print(f"\n{p}[{k}!{p}] Berakhir pada: {waktu.strftime('%Y-%m-%d %H:%M:%S')}\n")
     
 
 os.system("clear")
@@ -33,13 +32,11 @@ if not os.path.exists(file_wordlist):
     print(f"{m}Kesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
     sys.exit(1)
 
-# Tampilkan tanggal dan waktu saat skrip dimulai
-current_datetime_start = datetime.now()
-print(f"\n[!] Dimulai pada: {current_datetime_start.strftime('%Y-%m-%d %H:%M:%S')}")
+waktu = datetime.now()
+print(f"\n{p}[{k}!{p}] Dimulai pada: {waktu.strftime('%Y-%m-%d %H:%M:%S')}")
 
 try:
     with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
-
         for kata_sandi in w:
             kata_sandi = kata_sandi.strip()
 
@@ -61,5 +58,3 @@ try:
 except Exception as e:
     print(f"{k}Terjadi kesalahan: {e}{p}")
     sys.exit(1)
-
-
