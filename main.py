@@ -13,11 +13,11 @@ p = Fore.RESET
 k = Fore.YELLOW
 c = Fore.CYAN
 
-def waktu(){
+def waktu():
     # Tampilkan tanggal dan waktu saat skrip berakhir
     current_datetime_end = datetime.now()
     print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
-}
+    
 
 file_zip = input("Masukkan path ke file zip: ")
 
