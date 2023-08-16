@@ -5,6 +5,7 @@ import zipfile
 import os
 import sys
 from colorama import Fore
+from datetime import datetime  # Impor modul datetime
 
 m = Fore.RED
 h = Fore.GREEN
@@ -12,25 +13,21 @@ p = Fore.RESET
 k = Fore.YELLOW
 c = Fore.CYAN
 
-print(f"""
-{c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-{c}@ {p}Program : Pemecah Kata Sandi File Zip {c}    @
-{c}@ {p}Pembuat : Rofi [FII14]  {c}                  @
-{c}@ {p}GitHub  : https://github.com/FII14/PKSFZ {c} @
-{c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 
-{p}""")
-
 file_zip = input("Masukkan path ke file zip: ")
 
 if not os.path.exists(file_zip):
     print(f"{m}Kesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
     sys.exit(1)
-  
+
 file_wordlist = input("Masukkan path ke file wordlist: ")
 
 if not os.path.exists(file_wordlist):
     print(f"{m}Kesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
     sys.exit(1)
+
+# Tampilkan tanggal dan waktu saat skrip dimulai
+current_datetime_start = datetime.now()
+print(f"[!] Dimulai pada: {current_datetime_start.strftime('%Y-%m-%d %H:%M:%S')}")
 
 try:
     with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
@@ -54,3 +51,7 @@ try:
 except Exception as e:
     print(f"{k}Terjadi kesalahan: {e}{p}")
     sys.exit(1)
+
+# Tampilkan tanggal dan waktu saat skrip berakhir
+current_datetime_end = datetime.now()
+print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
