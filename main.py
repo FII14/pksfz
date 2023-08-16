@@ -34,18 +34,18 @@ def utama():
     try:
         file_zip = input("\nMasukkan path ke file zip: ")
         if not os.path.exists(file_zip):
-            print(f"{m}Kesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
+            print(f"{m}\nKesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
             sys.exit(1)
 
         if not zipfile.is_zipfile(file_zip):
-            print(f"{m}Kesalahan: File '{file_zip}' bukan file zip yang valid.{p}")
+            print(f"{m}\nKesalahan: File '{file_zip}' bukan file zip yang valid.{p}")
             berakhir()
             sys.exit(1)
 
         file_wordlist = input("Masukkan path ke file wordlist: ")
         if not os.path.exists(file_wordlist):
-            print(f"{m}Kesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
+            print(f"{m}\nKesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
             berakhir()
             sys.exit(1)
 
