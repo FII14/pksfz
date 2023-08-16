@@ -19,7 +19,9 @@ def berakhir():
     print(f"\n[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}\n")
     
 
-file_zip = input("Masukkan path ke file zip: ")
+os.system("clear")
+
+file_zip = input("\nMasukkan path ke file zip: ")
 
 if not os.path.exists(file_zip):
     print(f"{m}Kesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
