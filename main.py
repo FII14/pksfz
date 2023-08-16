@@ -12,7 +12,7 @@ p = Fore.RESET
 k = Fore.YELLOW
 c = Fore.CYAN
 
-print("""
+print(f"""
 {c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 {c}@ {p}Program : Pemecah Kata Sandi File Zip {c}    @
 {c}@ {p}Pembuat : Rofi [FII14]  {c}                  @
