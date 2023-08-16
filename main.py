@@ -21,11 +21,18 @@ def ekstrak_zip(file_zip, kata_sandi):
     try:
         with zipfile.ZipFile(file_zip, "r") as z:
             z.extractall(pwd=kata_sandi.encode("utf-8"))
-            print(f"\n{p}[{h}+{p}] {h}File zip: {file_zip}\n{p}[{h}+{p}] {h}Kata sandi: {kata_sandi}\n{p}[{h}+{p}] {h}Status: Benar")
+            print(f"
+{p}[{h}+{p}] {h}File zip: {file_zip}
+{p}[{h}+{p}] {h}Kata sandi: {kata_sandi}
+{p}[{h}+{p}] {h}Status: Benar")
             berakhir()
             sys.exit(0)
+            
     except Exception as e:
-        print(f"\n{p}[{m}-{p}] {m}File zip: {file_zip}\n{p}[{m}-{p}] {m}Kata sandi: {kata_sandi}\n{p}[{m}-{p}] {m}Status: Salah{p}")
+        print(f"
+{p}[{m}-{p}] {m}File zip: {file_zip}
+{p}[{m}-{p}] {m}Kata sandi: {kata_sandi}
+{p}[{m}-{p}] {m}Status: Salah{p}")
         time.sleep(1)
 
 def utama():
