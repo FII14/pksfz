@@ -41,11 +41,11 @@ try:
             try:
                 with zipfile.ZipFile(file_zip, "r") as z:
                     z.extractall(pwd=kata_sandi.encode("utf-8"))
-                print(f"\n{h}[*] File zip: {file_zip}\n[*] Kata sandi: {kata_sandi}\n[*] Status: Benar\n{p}")
+                print(f"\n{h}[{p}*{h}] File zip: {file_zip}\n[*] Kata sandi: {kata_sandi}\n[*] Status: Benar\n{p}")
                 sys.exit(0)
 
             except Exception as e:
-                print(f"\n{m}[*] File zip: {file_zip}\n[*] Kata sandi: {kata_sandi}\n[*] Status: Salah{p}")
+                print(f"\n{m}[{p}*{m}] File zip: {file_zip}\n[*] Kata sandi: {kata_sandi}\n[*] Status: Salah{p}")
                 time.sleep(1)
 
     print(f"\n{k}Kata sandi tidak ditemukan dalam wordlist.{p}")
