@@ -39,7 +39,7 @@ def utama():
     os.system("clear")
 
     try:
-        file_zip = input("\nMasukkan path ke file zip: ")
+        file_zip = input("\nMasukkan nama file zip: ")
         if not os.path.exists(file_zip):
             print(f"{m}\nKesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
@@ -50,7 +50,7 @@ def utama():
             berakhir()
             sys.exit(1)
 
-        file_wordlist = input("Masukkan path ke file wordlist: ")
+        file_wordlist = input("Masukkan nama file wordlist: ")
         if not os.path.exists(file_wordlist):
             print(f"{m}\nKesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
             berakhir()
@@ -64,7 +64,7 @@ def utama():
                 for kata_sandi in w:
                     kata_sandi = kata_sandi.strip()
                     ekstrak_zip(file_zip, kata_sandi)
-            print(f"\n{k}Kata sandi tidak ditemukan dalam wordlist.{p}")
+            print(f"\n{k}Kata sandi tidak ditemukan dalam file wordlist.{p}")
             berakhir()
             sys.exit(1)
         except Exception as e:
