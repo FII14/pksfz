@@ -33,7 +33,7 @@ if not os.path.exists(file_wordlist):
 
 # Tampilkan tanggal dan waktu saat skrip dimulai
 current_datetime_start = datetime.now()
-print(f"[!] Dimulai pada: {current_datetime_start.strftime('%Y-%m-%d %H:%M:%S')}")
+print(f"\n[!] Dimulai pada: {current_datetime_start.strftime('%Y-%m-%d %H:%M:%S')}")
 
 try:
     with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
