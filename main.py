@@ -16,7 +16,7 @@ c = Fore.CYAN
 def berakhir():
     # Tampilkan tanggal dan waktu saat skrip berakhir
     current_datetime_end = datetime.now()
-    print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"\n[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}\n")
     
 
 file_zip = input("Masukkan path ke file zip: ")
@@ -44,7 +44,7 @@ try:
             try:
                 with zipfile.ZipFile(file_zip, "r") as z:
                     z.extractall(pwd=kata_sandi.encode("utf-8"))
-                print(f"\n{h}[{p}*{h}] File zip: {file_zip}\n[{p}*{h}] Kata sandi: {kata_sandi}\n[{p}*{h}] Status: Benar\n{p}")
+                print(f"\n{h}[{p}*{h}] File zip: {file_zip}\n[{p}*{h}] Kata sandi: {kata_sandi}\n[{p}*{h}] Status: Benar{p}")
                 berakhir()
                 sys.exit(0)
 
