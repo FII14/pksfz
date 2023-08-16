@@ -13,6 +13,12 @@ p = Fore.RESET
 k = Fore.YELLOW
 c = Fore.CYAN
 
+def waktu(){
+    # Tampilkan tanggal dan waktu saat skrip berakhir
+    current_datetime_end = datetime.now()
+    print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
+}
+
 file_zip = input("Masukkan path ke file zip: ")
 
 if not os.path.exists(file_zip):
@@ -39,6 +45,7 @@ try:
                 with zipfile.ZipFile(file_zip, "r") as z:
                     z.extractall(pwd=kata_sandi.encode("utf-8"))
                 print(f"\n{h}[{p}*{h}] File zip: {file_zip}\n[{p}*{h}] Kata sandi: {kata_sandi}\n[{p}*{h}] Status: Benar\n{p}")
+                waktu()
                 sys.exit(0)
 
             except Exception as e:
@@ -52,6 +59,4 @@ except Exception as e:
     print(f"{k}Terjadi kesalahan: {e}{p}")
     sys.exit(1)
 
-# Tampilkan tanggal dan waktu saat skrip berakhir
-current_datetime_end = datetime.now()
-print(f"[!] Berakhir pada: {current_datetime_end.strftime('%Y-%m-%d %H:%M:%S')}")
+
