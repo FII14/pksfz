@@ -80,7 +80,7 @@ def utama():
             berakhir()
             sys.exit(1)
         except Exception as e:
-            print(f"{k}Terjadi kesalahan: {e}{p}")
+            print(f"\n{k}Terjadi kesalahan: {e}{p}")
             berakhir()
             sys.exit(1)
 
