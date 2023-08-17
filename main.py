@@ -49,7 +49,6 @@ def utama():
 {c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  {p}
 """)
     
-    
     try:
         file_zip = input("Masukkan nama file zip: ")
         if not os.path.exists(file_zip):
