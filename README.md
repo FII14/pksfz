@@ -1,5 +1,6 @@
 # PKSFZ
-PKSFZ adalah sebuah program Python3 sederhana untuk melakukan brute force pada file zip yang dilindungi kata sandi. Program ini menggunakan daftar kata sandi (wordlist) yang Anda berikan untuk mencoba memecahkan kata sandi file zip yang diberikan.
+
+PKSFZ adalah program sederhana yang dibangun menggunakan Python3 untuk menguji dan memecahkan keamanan file zip yang dilindungi kata sandi. Dengan mengandalkan daftar kata sandi (wordlist) yang Anda berikan, PKSFZ menggunakan metode brute force untuk mengeksplorasi kemungkinan kata sandi dan membuka file zip yang terkunci.
 
 ## Prasyarat
 
