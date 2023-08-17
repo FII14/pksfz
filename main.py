@@ -51,7 +51,7 @@ def utama():
     
     
     try:
-        file_zip = input("\nMasukkan nama file zip: ")
+        file_zip = input("Masukkan nama file zip: ")
         if not os.path.exists(file_zip):
             print(f"{m}\nKesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
