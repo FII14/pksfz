@@ -1,22 +1,20 @@
-# PKSFZ
+<h1>PKSFZ</h1>
 
-<img src="" alt="gambar" width="50%" />
+<img src="https://github.com/FII14/pksfz/blob/main/gambar.jpg" alt="gambar" width="45%" />
 
-PKSFZ adalah program sederhana yang dibangun menggunakan Python3 untuk menguji dan memecahkan keamanan file zip yang dilindungi kata sandi. Dengan mengandalkan daftar kata sandi (wordlist) yang Anda berikan, PKSFZ menggunakan metode brute force untuk mengeksplorasi kemungkinan kata sandi dan membuka file zip yang terkunci.
+<p>PKSFZ adalah program sederhana yang dibangun menggunakan Python3 untuk menguji dan memecahkan keamanan file zip yang dilindungi kata sandi. Dengan mengandalkan daftar kata sandi (wordlist) yang Anda berikan, PKSFZ menggunakan metode brute force untuk mengeksplorasi kemungkinan kata sandi dan membuka file zip yang terkunci.</p>
 
-## Prasyarat
+<h2>Prasyarat</h2>
 
-- Python3
-- Pustaka `colorama`
+<ul>
+  <li>Python3</li>
+  <li>Pustaka <code>colorama</code></li>
+</ul>
 
-## Cara Penggunaan
+<h2>Cara penggunaan</h2>
 
-1. Pastikan Anda memiliki Python3 yang terinstal di sistem Anda.
-2. Instal pustaka `colorama` dengan menjalankan perintah: `pip install colorama`
-4. Jalankan program dengan menjalankan perintah: `python3 pksfz.py`
-
-## Catatan
-
-- Pastikan Anda memiliki izin untuk menggunakan program ini sesuai dengan peraturan dan hukum yang berlaku di wilayah Anda.
-- Program ini hanya digunakan untuk tujuan pendidikan dan pengujian keamanan.
-- Penggunaan program ini untuk tujuan ilegal atau melanggar privasi orang lain adalah dilarang.
+<ul>
+  <li>Pastikan Anda memiliki Python3 yang terinstal di sistem Anda.</li>
+  <li>Instal pustaka <code>colorama</code> dengan menjalankan perintah: <code>pip3 install colorama</code></li>
+  <li>Jalankan program dengan menjalankan perintah: <code>python3 pksfz.py</code></li>
+</ul>
