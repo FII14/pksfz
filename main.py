@@ -41,6 +41,15 @@ def utama():
     else:
         os.system("clear")
 
+    print(f"""
+{c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  {p}
+{c}@ {p}Program : Pemecah kata sandi file zip     {c}@
+{c}@ {p}Pembuat : Rofi [FII14]                    {c}@
+{c}@ {p}GitHub  : https://github.com/FII14/pksfz  {c}@
+{c}@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  {p}
+""")
+    
+    
     try:
         file_zip = input("\nMasukkan nama file zip: ")
         if not os.path.exists(file_zip):
