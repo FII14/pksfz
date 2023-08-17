@@ -4,12 +4,12 @@ PKSFZ adalah program sederhana yang dibangun menggunakan Python3 untuk menguji d
 
 ## Prasyarat
 
-- Python 3
+- Python3
 - Pustaka `colorama`
 
 ## Cara Penggunaan
 
-1. Pastikan Anda memiliki Python 3 yang terinstal di sistem Anda.
+1. Pastikan Anda memiliki Python3 yang terinstal di sistem Anda.
 2. Instal pustaka `colorama` dengan menjalankan perintah: `pip install colorama`
 3. Pindah direktori ke direktori `src` dengan menjalankan perintah `cd src`
 4. Jalankan program dengan menjalankan perintah: `python3 pksfz.py`
