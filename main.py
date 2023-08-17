@@ -73,7 +73,7 @@ def utama():
             sys.exit(1)
 
     except KeyboardInterrupt:
-        print(f"\n{m}Proses dihentikan oleh pengguna.{p}")
+        print(f"\n\n{m}Proses dihentikan oleh pengguna.{p}")
         berakhir()
         sys.exit(1)
 
