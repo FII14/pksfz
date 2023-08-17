@@ -36,7 +36,10 @@ def ekstrak_zip(file_zip, kata_sandi):
         time.sleep(1)
 
 def utama():
-    os.system("clear")
+    if os.name == "nt":
+        os.system("cls")
+    else:
+        os.system("clear")
 
     try:
         file_zip = input("\nMasukkan nama file zip: ")
