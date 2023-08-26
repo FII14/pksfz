@@ -20,13 +20,13 @@ Program ini adalah program yang mencoba mengekstrak isi berkas zip yang dienkrip
 ## Persyaratan
 
 - Python3
-- Perpustakaan `colorama` (instal dengan `pip3 install colorama`)
+- Perpustakaan `colorama`
 
 ## Instalasi
 
 1. Klon repositori ini: `git clone https://github.com/FII14/pksfz.git`
 2. Masuk ke direktori: `cd pksfz`
-3. Instal perpustakaan yang dibutuhkan: `pip install colorama`
+3. Instal perpustakaan yang dibutuhkan: `pip3 install -r persyaratan.txt`
 
 ## Penggunaan
 
