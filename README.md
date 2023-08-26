@@ -1,5 +1,7 @@
 # PKSFZ
 
+![](https://github.com/FII14/pksfz/blob/main/gambar.jpg)
+
 PKSFZ adalah program yang mencoba mengekstrak isi berkas zip yang dienkripsi dengan mencoba berbagai kata sandi dari sebuah wordlist. Program ini dikembangkan oleh Rofi ([FII14](https://github.com/FII14)).
 
 ## Daftar Isi
