@@ -33,7 +33,7 @@ def ekstrak_zip(file_zip, kata_sandi):
 {p}[{m}-{p}] {m}File zip: {file_zip}
 {p}[{m}-{p}] {m}Kata sandi: {kata_sandi}
 {p}[{m}-{p}] {m}Status: Salah{p}""")
-        time.sleep(1)
+        time.sleep(0.1)
 
 def utama():
     if os.name == "nt":
