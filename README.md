@@ -20,7 +20,7 @@ Program ini adalah program yang mencoba mengekstrak isi berkas zip yang dienkrip
 ## Persyaratan
 
 - Python3
-- Perpustakaan `colorama` (instal dengan `pip install colorama`)
+- Perpustakaan `colorama` (instal dengan `pip3 install colorama`)
 
 ## Instalasi
 
