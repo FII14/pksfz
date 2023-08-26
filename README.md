@@ -1,20 +1,44 @@
-<h1>PKSFZ</h1>
+# PKSFZ
 
-<img src="https://github.com/FII14/pksfz/blob/main/gambar.jpg" alt="gambar" width="100%" />
+PKSFZ adalah program Python yang dirancang untuk membuka kata sandi pada berkas zip yang dienkripsi menggunakan wordlist. Program ini dikembangkan oleh Rofi ([FII14](https://github.com/FII14)).
 
-<p>PKSFZ adalah program sederhana yang dibangun menggunakan Python3 untuk menguji dan memecahkan keamanan file zip yang dilindungi kata sandi. Dengan mengandalkan daftar kata sandi (wordlist) yang Anda berikan, PKSFZ menggunakan metode brute force untuk mengeksplorasi kemungkinan kata sandi dan membuka file zip yang terkunci.</p>
+## Daftar Isi
 
-<h2>Prasyarat</h2>
+- [Pendahuluan](#pendahuluan)
+- [Penggunaan](#penggunaan)
+- [Persyaratan](#persyaratan)
+- [Instalasi](#instalasi)
+- [Berkontribusi](#berkontribusi)
+- [Lisensi](#lisensi)
 
-<ul>
-  <li>Python3</li>
-  <li>Pustaka <code>colorama</code></li>
-</ul>
+## Pendahuluan
 
-<h2>Cara penggunaan</h2>
+Program ini adalah alat yang mencoba mengekstrak isi berkas zip yang dienkripsi dengan mencoba berbagai kata sandi dari sebuah wordlist. Program ini menggunakan perpustakaan `zipfile` dan memberikan umpan balik tentang keberhasilan atau kegagalan setiap percobaan kata sandi.
 
-<ul>
-  <li>Pastikan Anda memiliki Python3 yang terinstal di sistem Anda.</li>
-  <li>Instal pustaka <code>colorama</code> dengan menjalankan perintah: <code>pip3 install colorama</code></li>
-  <li>Jalankan program dengan menjalankan perintah: <code>python3 pksfz.py</code></li>
-</ul>
+## Penggunaan
+
+1. Pastikan Anda memiliki berkas zip dan berkas wordlist yang sudah disiapkan.
+2. Jalankan program dengan perintah: `python3 pksfz.py`
+3. Ikuti petunjuk untuk memberikan jalur berkas zip dan berkas wordlist.
+4. Program akan mulai mencoba membuka kata sandi menggunakan wordlist yang diberikan.
+5. Jika kata sandi yang benar ditemukan, program akan menampilkan pesan sukses dan isi yang diekstrak akan tersedia.
+
+## Persyaratan
+
+- Python3
+- Perpustakaan `colorama` (instal dengan `pip install colorama`)
+
+## Instalasi
+
+1. Klon repositori ini: `git clone https://github.com/FII14/pksfz.git`
+2. Masuk ke direktori: `cd pksfz`
+3. Instal perpustakaan yang dibutuhkan: `pip install colorama`
+
+## Berkontribusi
+
+Kontribusi sangat dialu-alukan! Jika Anda menemukan bug atau memiliki saran perbaikan, silakan buat masalah (issue) atau permintaan tarik (pull request) di repositori ini.
+
+## Lisensi
+
+Proyek ini dilisensikan di bawah [Lisensi MIT](LICENSE).
+
