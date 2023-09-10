@@ -21,7 +21,6 @@ def ekstrak_zip(file_zip, kata_sandi):
             print(f"""{h}
     [+] File zip: {file_zip}
     [+] Kata sandi: {kata_sandi}
-    [+] Status: Benar
 
     [+] Isi file zip:{p}""")
             
