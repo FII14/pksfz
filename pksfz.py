@@ -9,6 +9,7 @@ from datetime import datetime
 
 h = Fore.GREEN
 p = Fore.RESET
+m = Fore.LIGHTRED_EX
 
 def berakhir():
     waktu = datetime.now()
@@ -61,7 +62,7 @@ def utama():
 {p}""")
     
     try:
-        file_zip = input(f"{h}[PKSFZ] Masukkan nama file zip > ")
+        file_zip = input(f"{h}[PKSFZ] Masukkan nama file zip {m}$ {h}")
         if not os.path.exists(file_zip):
             print(f"{h}\nFile zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
@@ -72,7 +73,7 @@ def utama():
             berakhir()
             sys.exit(1)
 
-        file_wordlist = input(f"{h}[PKSFZ] Masukkan nama file wordlist > ")
+        file_wordlist = input(f"{h}[PKSFZ] Masukkan nama file wordlist {m}$ {h}")
         if not os.path.exists(file_wordlist):
             print(f"{h}\nFile wordlist '{file_wordlist}' tidak ditemukan.{p}")
             berakhir()
