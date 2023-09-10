@@ -80,7 +80,7 @@ def utama():
             sys.exit(1)
 
         waktu = datetime.now()
-        print(f"\n{h}[!] Dimulai pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}{p}")
+        print(f"\n{h}--------------------------------------------------------\n[!] Dimulai pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}{p}")
 
         try:
             with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
