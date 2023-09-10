@@ -19,14 +19,14 @@ def ekstrak_zip(file_zip, kata_sandi):
         with zipfile.ZipFile(file_zip, "r") as z:
             z.extractall(pwd=kata_sandi.encode("utf-8"))
             print(f"""{h}
-[+] File zip: {file_zip}
-[+] Kata sandi: {kata_sandi}
-[+] Status: Benar
+    [+] File zip: {file_zip}
+    [+] Kata sandi: {kata_sandi}
+    [+] Status: Benar
 
-[+] Isi file zip:{p}""")
+    [+] Isi file zip:{p}""")
             
             for info in z.infolist():
-                print(f"    [+] {info.filename}")
+                print(f"        - {info.filename}")
             berakhir()
             sys.exit(0)
             
