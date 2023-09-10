@@ -31,7 +31,7 @@ def ekstrak_zip(file_zip, kata_sandi):
             if not os.path.exists("hasil"):
                 os.makedirs("hasil")
                 
-            os.rename(file_zip, os.path.join("hasil", file_zip)
+            os.rename(file_zip, os.path.join("hasil", file_zip))
                       
             berakhir()
             sys.exit(0)
