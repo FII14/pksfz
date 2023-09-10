@@ -26,7 +26,7 @@ def ekstrak_zip(file_zip, kata_sandi):
     [+] Isi file zip:{p}""")
             
             for info in z.infolist():
-                print(f"        - {info.filename}")
+                print(f"        [+] {info.filename}")
             berakhir()
             sys.exit(0)
             
@@ -57,18 +57,18 @@ def utama():
     try:
         file_zip = input(f"{h}[PKSFZ] Masukkan nama file zip > ")
         if not os.path.exists(file_zip):
-            print(f"{h}\nKesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
+            print(f"{h}\nFile zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
             sys.exit(1)
 
         if not zipfile.is_zipfile(file_zip):
-            print(f"{h}\nKesalahan: File '{file_zip}' bukan file zip yang valid.{p}")
+            print(f"{h}\nFile '{file_zip}' bukan file zip yang valid.{p}")
             berakhir()
             sys.exit(1)
 
         file_wordlist = input(f"{h}[PKSFZ] Masukkan nama file wordlist > ")
         if not os.path.exists(file_wordlist):
-            print(f"{h}\nKesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
+            print(f"{h}\nFile wordlist '{file_wordlist}' tidak ditemukan.{p}")
             berakhir()
             sys.exit(1)
 
