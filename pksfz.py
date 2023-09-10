@@ -26,11 +26,7 @@ def ekstrak_zip(file_zip, kata_sandi):
             sys.exit(0)
             
     except Exception as e:
-        print(f"""{h}
-[-] File zip: {file_zip}
-[-] Kata sandi: {kata_sandi}
-[-] Status: Salah{p}""")
-        time.sleep(0.1)
+        pass
 
 def utama():
     if os.name == "nt":
