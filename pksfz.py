@@ -7,7 +7,7 @@ import sys
 from colorama import Fore
 from datetime import datetime
 
-h = Fore.LIGHTGREEN_EX
+h = Fore.GREEN
 p = Fore.RESET
 
 def berakhir():
