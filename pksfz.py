@@ -26,7 +26,7 @@ def ekstrak_zip(file_zip, kata_sandi):
     [+] Isi file zip:{p}""")
             
             for info in z.infolist():
-                print(f"        [+] {info.filename}")
+                print(f"{h}        [+] {info.filename}{p}")
             berakhir()
             sys.exit(0)
             
