@@ -19,9 +19,9 @@ def ekstrak_zip(file_zip, kata_sandi):
         with zipfile.ZipFile(file_zip, "r") as z:
             z.extractall(pwd=kata_sandi.encode("utf-8"))
             print(f"""{h}
-[+] File zip: {file_zip}
-[+] Kata sandi: {kata_sandi}
-[+] Status: Benar{p}""")
+    [+] File zip: {file_zip}
+    [+] Kata sandi: {kata_sandi}
+    [+] Status: Benar{p}""")
             berakhir()
             sys.exit(0)
             
