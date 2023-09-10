@@ -27,6 +27,12 @@ def ekstrak_zip(file_zip, kata_sandi):
             
             for info in z.infolist():
                 print(f"{h}        [+] {info.filename}{p}")
+
+            if not os.path.exists("hasil"):
+                os.makedirs("hasil")
+                
+            os.rename(file_zip, os.path.join("hasil", file_zip)
+                      
             berakhir()
             sys.exit(0)
             
