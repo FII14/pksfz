@@ -31,7 +31,7 @@ def ekstrak_zip(file_zip, kata_sandi):
                 os.makedirs("hasil")
                 
             os.rename(info.filename, os.path.join("hasil", info.filename))
-            print(f"\n    {h}File zip berhasil dipecahkan dan disimpan dalam folder 'hasil'.{p}")
+            print(f"\n    {h}File zip berhasil diekstrak dan disimpan di dalam folder 'hasil'.{p}")
             
             berakhir()
             sys.exit(0)
