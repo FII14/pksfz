@@ -21,12 +21,12 @@ def ekstrak_zip(file_zip, kata_sandi):
             print(f"""{h}
 [+] File zip: {file_zip}
 [+] Kata sandi: {kata_sandi}
-[+] Status: Benar{p}
+[+] Status: Benar
 
-[+] Isi file zip:""")
-            print(f"{h}[+] Isi dari file zip {file_zip}:\n")
+[+] Isi file zip:{p}""")
+            
             for info in z.infolist():
-                print(f"    - {info.filename} ({info.file_size} bytes)")
+                print(f"    [+] {info.filename}")
             berakhir()
             sys.exit(0)
             
