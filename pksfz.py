@@ -7,7 +7,7 @@ import sys
 from colorama import Fore
 from datetime import datetime
 
-h = Fore.GREEN
+h = Fore.LIGHTGREEN_EX
 p = Fore.RESET
 
 def berakhir():
@@ -50,7 +50,7 @@ def utama():
 {p}""")
     
     try:
-        file_zip = input("[PKSFZ] Masukkan nama file zip # ")
+        file_zip = input(f"{h}[PKSFZ] Masukkan nama file zip > ")
         if not os.path.exists(file_zip):
             print(f"{h}\nKesalahan: File zip '{file_zip}' tidak ditemukan.{p}")
             berakhir()
@@ -61,7 +61,7 @@ def utama():
             berakhir()
             sys.exit(1)
 
-        file_wordlist = input("[PKSFZ] Masukkan nama file wordlist # ")
+        file_wordlist = input(f"{h}[PKSFZ] Masukkan nama file wordlist > ")
         if not os.path.exists(file_wordlist):
             print(f"{h}\nKesalahan: File wordlist '{file_wordlist}' tidak ditemukan.{p}")
             berakhir()
