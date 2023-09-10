@@ -13,7 +13,8 @@ m = Fore.LIGHTRED_EX
 
 def berakhir():
     waktu = datetime.now()
-    print(f"\n{h}[!] Berakhir pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}\n--------------------------------------------------------\n{p}")
+    print(f"\n{h}[!] Berakhir pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}")
+    print(f"\n{h}{'-' * 56}{p}\n")
 
 def ekstrak_zip(file_zip, kata_sandi):
     try:
@@ -47,18 +48,18 @@ def utama():
         os.system("clear")
 
     print(f"""{h}
---------------------------------------------------------
+{'-' * 56}
     _______  ___  ____   ______   ________  ________  
    |_   __ \|_  ||_  _|.' ____ \ |_   __  ||  __   _| 
      | |__) | | |_/ /  | (___ \_|  | |_ \_||_/  / /   
      |  ___/  |  __'.   _.____`.   |  _|      .'.' _  
     _| |_    _| |  \ \_| \____) | _| |_     _/ /__/ | 
    |_____|  |____||____|\______.'|_____|   |________| 
---------------------------------------------------------
+{'-' * 56}
     [+] Program     : Pemecah Kata Sandi File Zip
     [+] Dibuat oleh : FII14
     [+] Github      : https://github.com/FII14/pksfz    
---------------------------------------------------------
+{'-' * 56}
 {p}""")
     
     try:
@@ -80,7 +81,8 @@ def utama():
             sys.exit(1)
 
         waktu = datetime.now()
-        print(f"\n{h}--------------------------------------------------------\n[!] Dimulai pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}{p}")
+        print(f"\n{h}{'-' * 56}")
+        print(f"{h}[!] Dimulai pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}{p}")
 
         try:
             with open(file_wordlist, "r", encoding="utf-8", errors="ignore") as w:
@@ -102,4 +104,3 @@ def utama():
 
 if __name__ == "__main__":
     utama()
-    
