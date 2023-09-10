@@ -13,7 +13,7 @@ m = Fore.LIGHTRED_EX
 
 def berakhir():
     waktu = datetime.now()
-    print(f"\n{h}[!] Berakhir pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}\n{p}")
+    print(f"\n{h}[!] Berakhir pada: {waktu.strftime('%d-%m-%Y %H:%M:%S')}\n--------------------------------------------------------\n{p}")
 
 def ekstrak_zip(file_zip, kata_sandi):
     try:
